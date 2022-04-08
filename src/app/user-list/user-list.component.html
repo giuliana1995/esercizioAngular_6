@@ -1,5 +1,5 @@
 <div *ngIf="listUser.length > 0; else Empty">
-    <app-user-single *ngFor="let user of listUser; index as i;" [listUser]="user" (remove)="removeItem($event)">
+    <app-user-single *ngFor="let user of listUser; index as i;" [index]="i" [listUser]="user" (remove)="removeItem($event)">
 
     </app-user-single>
 </div>
